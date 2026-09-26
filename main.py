@@ -41,16 +41,51 @@ map_data_nc = []
 def mp(x, y, sprite_tile="tiles/blueground.png"):
     map_data_nc.append((x, y, sprite_tile))
 
-mp(0, 18, "grass_tall")
-mp(1, 18, "plant-1")
-mp(5, 18, "rosebush")
+# grass-plant position
+mp(0, 18, "grass-plant")
+mp(1, 18, "grass-plant")
+mp(2, 18, "grass-plant")
+mp(3, 18, "grass-plant")
+mp(4, 18, "grass-plant")
+
+mp(2, 10, "grass-plant")
+mp(3, 10, "grass-plant")
+mp(4, 10, "grass-plant")
+mp(5, 10, "grass-plant")
+mp(6, 10, "grass-plant")
+
+mp(18, 18, "grass-plant")
+mp(19, 18, "grass-plant")
+mp(20, 18, "grass-plant")
+mp(21, 18, "grass-plant")
+mp(22, 18, "grass-plant")
+mp(23, 18, "grass-plant")
+mp(24, 18, "grass-plant")
+mp(25, 18, "grass-plant")
+
+
+# plant-1 position
+mp(30, 13, "plant-1")
+mp(31, 13, "plant-1")
+mp(32, 13, "plant-1")
+mp(33, 13, "plant-1")
+mp(34, 13, "plant-1")
+mp(35, 13, "plant-1")
+mp(36, 13, "plant-1")
+mp(37, 13, "plant-1")
+
+
+#mp(7, 18, "rosebush")
+mp(5, 18, "flowers")
+mp(6, 18, "flowers")
 mp(7, 18, "flowers")
-mp(12, 18, "grass_tall")
-mp(14, 18, "grass_tall")
-mp(18, 18, "purple_fire")
-mp(5, 15, "grass-plant")
-mp(5.5, 15, "grass-plant")
-mp(5.6, 15, "grass-plant")
+mp(8, 18, "flowers")
+mp(9, 18, "flowers")
+mp(10, 18, "flowers")
+mp(11, 18, "flowers")
+mp(12, 18, "flowers")
+   
+#mp(18, 18, "purple_fire")
 #mp(25, 18, "willow-wisp")
 
 
