@@ -47,6 +47,11 @@ mp(5, 18, "rosebush")
 mp(7, 18, "flowers")
 mp(12, 18, "grass_tall")
 mp(14, 18, "grass_tall")
+mp(18, 18, "purple_fire")
+mp(5, 15, "grass-plant")
+mp(5.5, 15, "grass-plant")
+mp(5.6, 15, "grass-plant")
+#mp(25, 18, "willow-wisp")
 
 
 
@@ -55,7 +60,7 @@ pygame.init()
 screen = pygame.display.set_mode((screen_size))
 pygame.display.set_caption("game")
 
-background = pygame.image.load("tiles/game-background.png").convert_alpha()
+background = pygame.image.load("tiles/zees-art/game-background.png").convert_alpha()
 background = pygame.transform.scale(background, screen_size)
 running = True
 
@@ -115,7 +120,10 @@ while running:
         "grass_tall": pygame.image.load("tiles/sprite_Grimm_Grass_Tall0.png").convert_alpha(),
         "plant-1": pygame.image.load("tiles/plant-1.png").convert_alpha(),
         "flowers": pygame.image.load("tiles/flowers.png").convert_alpha(),
+        "purple_fire": pygame.image.load("tiles/zees-art/purple_fire.png").convert_alpha(),
+        "grass-plant": pygame.image.load("tiles/zees-art/grass-plant.png").convert_alpha(),
         "rosebush": pygame.image.load("tiles/rose_bush.png").convert_alpha(),
+        #"willow-wisp": pygame.image.load("tiles/zees-art/willow-wisp.png").convert_alpha(),
     }
 
     for name, image in tile_images.items():
