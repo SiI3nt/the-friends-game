@@ -78,6 +78,24 @@ for i in range(20):
     frame = pygame.transform.scale(frame, (player_size, player_size))
     walk_left_frames.append(frame)
 
+
+# -- GAME SOUNDS --
+# Load start sound
+start_sound_1 = pygame.mixer.Sound('sounds/mondamusic-retro-arcade-game-music-512837.mp3') 
+
+# Play start sound
+start_sound_1.play()
+pygame.mixer.music.fadeout(1000)
+
+# Moving left and right sound
+left_right_sound = pygame.mixer.Sound('sounds/power_up_1.wav') 
+
+# Moving up and down sound
+up_down_sound = pygame.mixer.Sound('sounds/power_up_3.wav') 
+
+
+# -- GAME LOOP --
+
 #window running
 while running:
     for event in pygame.event.get():
