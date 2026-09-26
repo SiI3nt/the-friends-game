@@ -88,10 +88,7 @@ start_sound_1.play()
 pygame.mixer.music.fadeout(1000)
 
 # Moving left and right sound
-left_right_sound = pygame.mixer.Sound('sounds/power_up_1.wav') 
-
-# Moving up and down sound
-up_down_sound = pygame.mixer.Sound('sounds/power_up_3.wav') 
+left_right_sound = pygame.mixer.Sound('sounds/universfield-footsteps-walking-278819-cropped.mp3') 
 
 
 # -- GAME LOOP --
@@ -164,12 +161,14 @@ while running:
         player_x -= player_speed
         frame = (pygame.time.get_ticks() // 25) % len(walk_left_frames)
         current_player_image = walk_left_frames[frame]
+        left_right_sound.play()
     
     #D
     elif keys[pygame.K_d]:
         player_x += player_speed
         frame = (pygame.time.get_ticks() // 25) % len(walk_right_frames)
         current_player_image = walk_right_frames[frame]
+        left_right_sound.play()
 
     for x, y, sprite_tile in map_data:
         tile_rect = pygame.Rect(x * map_pixel_size, y * map_pixel_size, map_pixel_size, map_pixel_size)
