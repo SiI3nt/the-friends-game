@@ -143,6 +143,13 @@ player_image = pygame.transform.scale(
 )
 
 
+# Load start sound
+start_sound_1 = pygame.mixer.Sound('sounds/song.wav') 
+
+# Play start sound
+start_sound_1.play()
+
+
 # -- GAME LOOP --
 running = True
 
