@@ -66,14 +66,14 @@ idle_player_image = pygame.transform.scale(idle_player_image, (player_size, play
 #this function was from a template on the web (cause idk how to do it)
 walk_right_frames = []
 for i in range(19):
-    path = f"charactor1walkright/charactor1walkright_{i:02d}.png"
+    path = f"tiles/charactor1walkright/charactor1walkright_{i:02d}.png"
     frame = pygame.image.load(path).convert_alpha()
     frame = pygame.transform.scale(frame, (player_size, player_size))
     walk_right_frames.append(frame)
 
 walk_left_frames = []
 for i in range(20):
-    path = f"charactor1walkleft/charactor1left_{i:02d}.png"
+    path = f"tiles/charactor1walkleft/charactor1left_{i:02d}.png"
     frame = pygame.image.load(path).convert_alpha()
     frame = pygame.transform.scale(frame, (player_size, player_size))
     walk_left_frames.append(frame)
@@ -95,9 +95,9 @@ while running:
     #mapdataload
     tile_images = {
 
-        "dirt": pygame.image.load("tiles/Grimm_Dirt0.png").convert_alpha(),
-        "grass_short": pygame.image.load("tiles/Grimm_Grass0.png").convert_alpha(),
-        "grass_tall": pygame.image.load("tiles/Grimm_Grass_Tall0.png").convert_alpha(),
+        "dirt": pygame.image.load("tiles/sprite_Grimm_Dirt0.png").convert_alpha(),
+        "grass_short": pygame.image.load("tiles/sprite_Grimm_Grass0.png").convert_alpha(),
+        "grass_tall": pygame.image.load("tiles/sprite_Grimm_Grass_Tall0.png").convert_alpha(),
         "plant-1": pygame.image.load("tiles/plant-1.png").convert_alpha(),
         "flowers": pygame.image.load("tiles/flowers.png").convert_alpha(),
         "rosebush": pygame.image.load("tiles/rose_bush.png").convert_alpha(),
