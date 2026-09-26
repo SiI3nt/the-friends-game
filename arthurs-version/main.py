@@ -142,13 +142,19 @@ player_image = pygame.transform.scale(
     (player_size, player_size)
 )
 
-
+# -- GAME SOUNDS --
 # Load start sound
 start_sound_1 = pygame.mixer.Sound('sounds/song.wav') 
 
 # Play start sound
 start_sound_1.play()
+pygame.mixer.music.fadeout(5000)
 
+# Moving left and right sound
+left_right_sound = pygame.mixer.Sound('sounds/power_up_1.wav') 
+
+# Moving up and down sound
+up_down_sound = pygame.mixer.Sound('sounds/power_up_3.wav') 
 
 # -- GAME LOOP --
 running = True
@@ -211,9 +217,19 @@ while running:
 
     if keys[pygame.K_a]:
         move_x -= 1
+        left_right_sound.play()
 
     if keys[pygame.K_d]:
         move_x += 1
+        left_right_sound.play()
+
+    if keys[pygame.K_w]:
+            move_y -= 1
+            up_down_sound.play()
+
+    if keys[pygame.K_s]:
+            move_y += 1
+            up_down_sound.play()
 
     # Normalisation of keyboard mouvements
     # to avoid that the diagonal is faster
