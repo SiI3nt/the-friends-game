@@ -149,6 +149,8 @@ mp(107, 23, "flowers")
 mp(108, 23, "flowers")
 mp(109, 23, "flowers")
 mp(110, 23, "flowers")
+
+mp(111, 22, "crystal")
    
 #mp(18, 18, "purple_fire")
 #mp(25, 18, "willow-wisp")
@@ -223,6 +225,7 @@ while running:
         "purple_fire": pygame.image.load("tiles/zees-art/purple_fire.png").convert_alpha(),
         "grass-plant": pygame.image.load("tiles/zees-art/grass-plant.png").convert_alpha(),
         "rosebush": pygame.image.load("tiles/rose_bush.png").convert_alpha(),
+        "crystal": pygame.image.load("tiles/crystal.png").convert_alpha(),
         #"willow-wisp": pygame.image.load("tiles/zees-art/willow-wisp.png").convert_alpha(),
     }
 
