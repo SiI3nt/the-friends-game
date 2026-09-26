@@ -98,7 +98,7 @@ clock = pygame.time.Clock()
 
 # -- IMAGES --
 background = pygame.image.load(
-    "IMG_0344(1).jpg"
+    "just-filip-6Q0csNrm_Bk-unsplash.jpg"
 ).convert_alpha()
 
 background = pygame.transform.scale(
@@ -107,7 +107,7 @@ background = pygame.transform.scale(
 )
 
 dirt_image = pygame.image.load(
-    "sprite_Grimm_Dirt0.png"
+    "blueground.png"
 ).convert_alpha()
 
 dirt_image = pygame.transform.scale(
@@ -125,7 +125,7 @@ grass_image = pygame.transform.scale(
 )
 
 tree_image = pygame.image.load(
-    "tree_dark.png"
+    "tree_light.png"
 ).convert_alpha()
 
 tree_image = pygame.transform.scale(
